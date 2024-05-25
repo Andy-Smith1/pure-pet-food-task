@@ -6,10 +6,21 @@ export default {
   ],
   theme: {
     screens: {
-      tablet: '768px',
-      desktop: '1024px',
+      tablet: "768px",
+      desktop: "1024px",
   },
-    extend: {},
+  fontFamily: {
+    roboto: ["Roboto", "sans-serif"],
+    quicksand: ["Quicksand", "sans-serif"]
+  },
+    extend: {
+      colors: {
+        ["pure-grey"]: "#eae5dc",
+        ["pure-green"]: "#274c46",
+        ["pure-yellow"]: "#f2a900",
+        ["pure-purple"]: "#713170"
+      }
+    },
   },
   plugins: [],
 }

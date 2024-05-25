@@ -1,1 +1,11 @@
 @tailwind utilities;
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/RobotoCondensed-VariableFont_wght.ttf");
+}
