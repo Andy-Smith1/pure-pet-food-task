@@ -1,5 +1,6 @@
 import express from "express";
 import ViteExpress from "vite-express";
+import { OfferDetails } from "../client/types/offer.js";
 
 const app = express();
 const port = 3000;
@@ -10,7 +11,7 @@ const port = 3000;
  * the days for each possible subscription, the other will return the relevant object from the mockData.
  */
 
-const mockData: Record<string, any> = {
+const mockData: Record<string, OfferDetails> = {
   '32': {
     'price': "29.99",
     'discount': "25"

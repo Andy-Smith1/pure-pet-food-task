@@ -1,14 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { Button } from "../general/Button";
 import { PageLayout } from "../layout/PageLayout"
-import { Link } from "react-router-dom";
 import { fetchJSON } from "../../helpers/fetch";
 
 export const HomePage = (): JSX.Element => {
 
     /**
      * Tanstack/React Query used for data fetching and as an async state management tool.
-     * Simplifies managing error & loading state and avoids bloated useEffect pattern
+     * Simplifies managing error & loading state and avoids bloated useEffect & useState pattern.
      */
     const { data, isLoading, isError } = useQuery({
         queryFn: () => fetchJSON(`/api/subscriptions`, 10000),
