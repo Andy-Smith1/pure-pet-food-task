@@ -30,7 +30,7 @@ describe('HomePage', () => {
 
     it('Renders loading state', async () => {
 
-        (fetch as any).mockResponseOnce(JSON.stringify({ data: [] }), { status: 200 });
+        fetch.mockResponseOnce(JSON.stringify({ data: [] }), { status: 200 });
 
         render(
             <QueryWrapper>
