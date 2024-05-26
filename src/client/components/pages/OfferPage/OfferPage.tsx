@@ -1,10 +1,9 @@
 import { useParams } from "react-router-dom";
-import { PageLayout } from "../layout/PageLayout"
+import { PageLayout } from "../../layout/PageLayout"
 import { useQuery } from "@tanstack/react-query";
-import { fetchJSON } from "../../helpers/fetch";
-import { OfferDetails } from "../../types/offer";
-import { SimpleCard } from "../general/SimpleCard";
-import { TransitionPack } from "../blocks/TransitionPack";
+import { fetchJSON } from "../../../helpers/fetch";
+import { OfferDetails } from "../../../types/offer";
+import { TransitionPack } from "../../blocks/TransitionPack";
 
 export const OfferPage = (): JSX.Element => {
 
@@ -31,7 +30,7 @@ export const OfferPage = (): JSX.Element => {
             {isLoading && <h1>Loading...</h1>}
 
             <div className="h-full flex justify-center items-center">
-                {offerData && <TransitionPack price={price} transitionDays="12" subscriptionDays={days ?? ""} discount={discount} />}
+                {offerData && <TransitionPack price={price} transitionDays="12" subscriptionDays={days ?? ""} discount={discount} shouldShowDiscountLabel={true} />}
             </div>
         </PageLayout>
     )

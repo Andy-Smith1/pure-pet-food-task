@@ -10,7 +10,7 @@ export const TransitionPack = ({
     subscriptionDays,
     price,
     discount,
-    shouldShowDiscountLabel
+    shouldShowDiscountLabel = false
 }: Props): JSX.Element => {
 
     const transitionDaysNum: number = parseInt(transitionDays);
@@ -37,7 +37,7 @@ export const TransitionPack = ({
                             Previous price:
                         </span>
                         £{price}
-                        <DiscountLabel labelText="50% OFF" className="absolute -top-1/4 -right-20 -rotate-[18deg]" />
+                        {shouldShowDiscountLabel && <DiscountLabel discount={discountNum} className="absolute -top-1/4 -right-20 -rotate-[18deg]" />}
                     </p>
                 </div>
             </SimpleCard>

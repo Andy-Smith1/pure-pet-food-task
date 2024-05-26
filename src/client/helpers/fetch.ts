@@ -52,7 +52,7 @@ export const fetchJSON = (
         )
         .catch((error: Error) => {
 
-            return new Error(error.message)
+            throw new Error(error.message)
 
         })
 }

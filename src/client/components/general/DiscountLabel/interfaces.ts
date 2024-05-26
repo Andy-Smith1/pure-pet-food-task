@@ -1,6 +1,6 @@
 import { LabelColor } from "../DecorativeLabel/interfaces";
 
 export interface Props {
-    labelText: string;
+    discount: number;
     className?: string;
 }

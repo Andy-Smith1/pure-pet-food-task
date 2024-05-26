@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import { Button } from "../general/Button";
-import { PageLayout } from "../layout/PageLayout"
-import { fetchJSON } from "../../helpers/fetch";
+import { Button } from "../../general/Button";
+import { PageLayout } from "../../layout/PageLayout"
+import { fetchJSON } from "../../../helpers/fetch";
 
 export const HomePage = (): JSX.Element => {
 
