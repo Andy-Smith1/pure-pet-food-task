@@ -11,7 +11,7 @@ export const DecorativeLabel = ({ labelText, labelColor = "teal", className }: P
     };
 
     return (
-        <span className={`font-roboto font-bold text-sm text-white rounded py-1 px-2 ${generatedClassNames[labelColor]} ${className}`}>{labelText.toUpperCase()}</span>
+        <span className={`font-roboto font-bold text-sm text-white rounded py-0.5 px-1.5 ${generatedClassNames[labelColor]} ${className}`}>{labelText.toUpperCase()}</span>
     )
 
 }

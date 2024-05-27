@@ -1,0 +1,1 @@
+export const FETCH_TIMEOUT: number = 10000;

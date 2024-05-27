@@ -37,7 +37,7 @@ export const TransitionPack = ({
                             Previous price:
                         </span>
                         £{price}
-                        {shouldShowDiscountLabel && <DiscountLabel discount={discountNum} className="absolute -top-1/4 -right-20 -rotate-[18deg]" />}
+                        {shouldShowDiscountLabel && <DiscountLabel discount={discountNum || 0} className="absolute -top-1/4 -right-20 -rotate-[18deg]" />}
                     </p>
                 </div>
             </SimpleCard>

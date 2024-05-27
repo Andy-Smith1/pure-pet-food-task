@@ -34,4 +34,4 @@ npm run test
 - React Router - used for client side routing between home and offer pages.
 - React/Tanstack Query - data fetching/async state management library.
 - TypeScript - basic tsconfig included with Vite setup.
-- Jest & React Testing Library - few examples of unit tests to demonstrate understanding. Test files are found within component directories.
+- Jest, React Testing Library, Jest Fetch Mock - few examples of unit tests to demonstrate understanding. Jest Fetch Mock used to mock API calls, would opt for MSW in larger projects. Test files are found within component directories.

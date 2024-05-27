@@ -9,7 +9,7 @@ export const fetchWithTimeOut = (
     options?: FetchOptions
 ): Promise<any> => {
     return Promise.race([
-        fetch(url, options as any).then((response: Response) => {
+        fetch(url, options).then((response: Response) => {
             return response
         }),
         new Promise((_, reject) =>

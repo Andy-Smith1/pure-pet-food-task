@@ -1,5 +1,5 @@
 import { render, waitFor, screen } from '@testing-library/react';
-import { OfferPage } from './OfferPage';
+import { OfferPage } from '.';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from "react-router-dom";
 import { PropsWithChildren } from 'react';
